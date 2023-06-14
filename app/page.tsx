@@ -16,8 +16,8 @@ const Page = async () => {
       <TodoForm />
 
       {todos?.map((todo) => (
-      //  <li>{}</li>
-      <Todo todo={todo}/>
+        <Todo
+          key={todo.id} todo={todo} />
       ))}
     </div>
   )
